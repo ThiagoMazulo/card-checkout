@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.main-container {
+  background-color: #111827;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  display: flex;
+  flex-direction:column;
+  align-items: flex-start;
+  max-width: 150%;
+  height: 45%;
+  background-color:#1F2937;
+  padding: 32px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #374151;
+  border-radius: 8px;
+}
+.span-errorNum-cartao, .span-errorNome, .span-errorcard, .span-errorValidade {
+  color: red;
+}
+
+.conteiner {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 64px;
+  position: relative;
+}
+.form {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 24px;
+} 
+
+.form-line {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 89%;
+  height: 68px;
+  gap: 4px;
+  font-size: 14px;
+}
+input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  width: 99%;
+  height: 48px;
+  background: #111827;
+  border: 1.5px solid #9333EA;
+  border-radius: 4px;
+}
+
+.forms-validade {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 88%;
+  height: 68px;
+}
+
+.validade {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  font-size: 14px;
+  gap: 4px;
+}
+
+.input-validade {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height:48px;
+  gap: 4px;
+  width: 100%;
+} 
+
+.codigo-cvv {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  font-size: 14px;
+  padding-right: 2px;
+  gap: 4px;
+}
+
+#code {
+  height:48px;
+  width: 100%;
+}
+.cartao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 15px 0;
+  
+}
+
+.card-container {
+  height: 168px;
+  width: 280px;
+  background: rgb(2, 0, 36);
+  border-radius: 16px;
+  
+  background: -moz-linear-gradient(
+    301deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 18%,
+    rgba(4, 195, 132, 1) 60%,
+    rgb(112, 0, 177) 100%
+  );
+  background: -webkit-linear-gradient(
+    301deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 18%,
+    rgba(4, 195, 132, 1) 60%,
+    rgb(112, 0, 177) 100%
+  );
+  background: linear-gradient(
+    301deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 18%,
+    rgba(4, 195, 132, 1) 60%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);
+}
+
+ button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 48px;
+  width: 305%;
+  border-radius: 8px;
+  margin-top: 50px;
+  margin-left: 3%;
+  background-color: #9333ea;
+  font-size: 18px;
+} 
+
+.numcard {
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  margin-left: 20px;
+  bottom: 135px;
+  position: absolute;
+}
+
+.titular {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 20px;
+  width: 90%;
+  position: absolute;
+  bottom: 100px;
+}
+
+.top-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  margin-left: 25px;
+}
+
+.span-cvv {
+  display: flex;
+  flex-direction: row;
+  align-items:end;
+  width: 30px;
+  position: absolute;
+  bottom: 100px;
+  right: 20px;
+}
+
+.check-msg, img {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.check-msg, img, span {
+  font-size: 14px;
+}
+
+.cartao {
+  position: relative;
+}
+
+@media(max-width: 2560px){
+  .app {
+    height: 50%;
+  }
+  .check-msg2 {
+    display: none;
+}
+
+}
+
+@media(max-width: 1440px){
+  .app {height: 50%;
+
+}
+.check-msg2 {
+  display: none;
+}
+}
+
+
+@media(max-width: 1024px) {
+  .app {
+    height: 50%;
+  }
+  .check-msg2 {
+    display: none;
+}
+}
+
+@media(max-width: 768px) {
+
+  .main-container {
+    height: 125vh;
+    width: 125vw;
+  }
+  .app {
+    width: 365px;
+    height: 75%;
+  }
+  button {
+    top: 425px;
+    width: 125%;
+    margin-top: 80px;
+    
+  }
+  .card-container {
+    position: relative;
+    top: 25px;
+  }
+
+  .form {
+    width: 100%; 
+  }
+  .form-line {
+    width: 100%; 
+  }
+  .forms-validade {
+    width: 100%;
+  }
+  .conteiner {
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .cartao {
+    height: 45%;
+    right: 20%;
+    gap: 40px;
+    position: relative;
+    left: 2px;
+    
+  }
+  .check-msg {
+    display: none;
+}
+  .check-msg2 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  left: 53px;
+  margin-top: 30%;
+  position: relative;
+}
+.numcard {
+  bottom: 70px;
+}
+.titular {
+  bottom: 25px;
+}
+.span-cvv {
+  bottom: 25px;
+}
+
+  }
+
+
+
+
+
+
+
+
